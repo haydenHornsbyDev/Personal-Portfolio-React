@@ -6,11 +6,23 @@
 
     &--light {
         background-color: $background-light;
-        color: $text-dark;
+        color: $background-light-text;
+    }
+
+    &--gray {
+        color: $background-gray-text;
+        
+        &-light {
+            background-color: $background-gray-light;
+        }
+        
+        &-dark {
+            background-color: $background-gray-dark;
+        }
     }
 
     &--dark {
         background-color: $background-dark;
-        color: $text-light;
+        color: $background-dark-text;
     }
 }
