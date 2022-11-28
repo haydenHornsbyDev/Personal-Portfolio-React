@@ -10,15 +10,8 @@
     }
 
     &--gray {
+        background-color: $background-gray-dark;
         color: $background-gray-text;
-        
-        &-light {
-            background-color: $background-gray-light;
-        }
-        
-        &-dark {
-            background-color: $background-gray-dark;
-        }
     }
 
     &--dark {
