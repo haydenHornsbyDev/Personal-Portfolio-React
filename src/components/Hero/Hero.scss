@@ -1,0 +1,154 @@
+@import "../../scss/lib.scss";
+
+.c-hero {
+    position: relative;
+    height: 100vh;
+    min-height: fit-content;
+    max-height: 1080px;
+
+    &__wrapper {
+        @include wrapper;
+    }
+
+    &__container {
+        @include container;
+    }
+
+    &__content {
+        position: relative;
+        top: calc((50vh - 45.35px) - 168px);
+        height: 336px;
+        width: 343px;
+
+        @media only screen and (min-width: $bm-sm) {
+            left: calc(50% - 171.5px);
+        }
+
+        @media only screen and (min-width: $bm-lg) {
+            top: calc((50vh - 45.35px) - 270px);
+            left: calc(50% - 389px);
+            width: 778px;
+            height: 478px;
+        }
+
+        @media only screen and (min-width: $bm-xxl) {
+            top: calc((50vh - 45.35px) - 166px);
+            left: calc(50% - 267px);
+            height: 288px;
+        }
+    }
+
+    &__divider {
+        position: absolute;
+        top: 14px;
+        border-radius: 3px;
+        width: 6px;
+        height: 100%;
+        max-height: 6px;
+        background-color: $purple-dark;
+        transition: max-height 3s;
+
+        &.is-active {
+            max-height: 100%;
+        }
+
+        @media only screen and (min-width: $bm-lg) {
+            top: 22px;
+        }
+        
+        @media only screen and (min-width: $bm-xxl) {
+            top: 22px;
+        }
+    }
+
+    &__name {
+        position: absolute;
+        left: 10px;
+        opacity: 0%;
+        transition: opacity 5s;
+
+        @media only screen and (min-width: $bm-xxl) {
+            transition: none;
+        }
+        
+        &.is-active {
+            opacity: 100%;
+
+            & .c-hero__firstname {
+                @media only screen and (min-width: $bm-xxl) {
+                    
+                }
+            }
+
+            & .c-hero__surname {
+                @media only screen and (min-width: $bm-xxl) {
+                    
+                }
+            }
+        }
+        
+        & .c-hero__firstname{
+            @media only screen and (min-width: $bm-lg) {
+                line-height: 160px;
+            }
+            
+            @media only screen and (min-width: $bm-xxl) {
+                
+            }
+        }
+        
+        & .c-hero__surname{
+            @media only screen and (min-width: $bm-lg) {
+                line-height: 160px;
+            }
+            
+            @media only screen and (min-width: $bm-xxl) {
+                
+            }
+        }
+    }
+
+    &__text {
+        position: absolute;
+        top: 232px;
+        left: 15px;
+        opacity: 0%;
+        transition: opacity 5s;
+        transition-delay: 1s;
+
+        &.is-active {
+            opacity: 100%;
+        }
+
+        @media only screen and (min-width: $bm-lg) {
+            top: 380px;
+            left: 20px;
+        }
+
+        @media only screen and (min-width: $bm-xxl) {
+            
+        }
+    }
+
+    &__title {
+        margin-bottom: 10px;
+    }
+
+    &__caption {
+        line-height: 24px;
+    }
+
+    &__arrow {
+        position: absolute;
+        bottom: 20px;
+        left: calc(50% - 35.35px);
+        display: block;
+        opacity: 0%;
+        transition: opacity 5s;
+        transition-delay: 3s;
+
+        &.is-active {
+            opacity: 100%;
+        }
+    }
+}

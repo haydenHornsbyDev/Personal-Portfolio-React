@@ -1,0 +1,40 @@
+@import "../../scss/lib.scss";
+
+.c-nav {
+    
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        margin: 0px -8px;
+    }
+
+    &__item {
+        padding: 0px 8px;
+
+        @media only screen and (min-width: $bm-sm) {
+            padding: 0 16px;
+        }
+    }
+
+    &__link {
+        display: block;
+
+        @media only screen and (min-width: $bm-lg) {
+            font-size: 20px;
+        }
+        
+        &:hover {
+            color: #84239B;
+
+            @media only screen and (min-width: $bm-lg) {
+                font-size: 20px;
+            }
+        }
+        
+        &.is-active {
+            font-weight: 600;
+            font-size: 24px;
+            text-transform: uppercased;
+        }
+    }
+}

@@ -1,0 +1,52 @@
+@import "../../scss/lib.scss";
+
+.c-header {
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
+    // padding: 16px 0px 16px 0px;
+
+    &__wrapper {
+        @include wrapper;
+    }
+    
+    &__container {
+        @include container;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 0px 16px 0px;
+    }
+    
+    &__face--1 {
+        display: block;
+    }
+    
+    &__face--2 {
+        display: none;
+    }
+    
+    &__smth {
+        width: 35px;
+        text-align: center;
+        cursor: default;
+
+        @media only screen and (min-width: $bm-lg) {
+            font-size: 20px;
+        }
+
+        &:hover {
+
+            & .c-header__face--1 {
+                display: none;
+            }
+        
+            & .c-header__face--2 {
+                display: block;
+            }
+        }
+    }
+}
