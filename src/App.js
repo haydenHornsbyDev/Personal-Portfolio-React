@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <Hero/>
-      <Header/>
+      <Header id="header"/>
     </div>
   );
 }
