@@ -1,0 +1,116 @@
+@import "../../scss/lib.scss";
+
+.c-footer {
+    &__wrapper {
+        @include wrapper;
+    }
+    
+    &__container {
+        @include container;
+    }
+
+    &__content {
+        padding-bottom: 80px;
+        color: $background-gray-text;
+    }
+
+    &__border {
+        border-radius: 1px;
+        width: 100%;
+        height: 2px;
+        background-color: $purple-dark;
+
+        &--top {
+            margin-bottom: 80px;
+        }
+    }
+
+    &__icons {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        // width: 150px;
+        width: 100px;
+        height: 40px
+    }
+
+    &__icon {
+        display: inline-block;
+
+        &:hover,
+        &:focus {
+            & .c-footer__underline {
+                display: block;
+            }
+        }
+    }
+
+    &__link {
+        &--icon {
+            display: block;
+            line-height: unset;
+
+            &:hover,
+            &:focus {
+                line-height: unset;
+            }
+        }
+
+        &--page {
+            display: block;
+
+            &:hover,
+            &:focus {
+                color: $purple-dark;
+            }
+        }
+    }
+
+    &__underline {
+        display: none;
+        margin-top: 2px;
+        border-radius: 1px;
+        width: 100%;
+        height: 2px;
+        background-color: $purple-dark;
+    }
+
+    &__divider {
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 1px;
+        width: 100px;
+        height: 2px;
+        background-color: $purple-dark;
+    }
+
+    &__pages {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 250px;
+    }
+
+    &__page {
+        display: inline-block;
+    }
+}
+
+#github-icon {
+    width: 32px;
+    height: 32px;
+}
+
+#linkedin-icon {
+    width: 32px;
+    height: 32px;
+}
+
+#instagram-icon {
+    width: 32px;
+    height: 32px;
+}
