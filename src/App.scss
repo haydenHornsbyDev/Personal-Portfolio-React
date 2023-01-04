@@ -5,3 +5,11 @@
 @import "./scss/elements/typography.scss";
 
 @import "./scss/generic/reset.scss";
+
+#header {
+    position: sticky;
+    z-index: 10;
+    top: 0px;
+    box-shadow: 0px 5px 5px $shadow-black;
+    border-bottom: 2px solid $purple-dark;
+}
