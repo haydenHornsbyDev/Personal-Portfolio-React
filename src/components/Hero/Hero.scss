@@ -76,13 +76,13 @@
 
             & .c-hero__firstname {
                 @media only screen and (min-width: $bm-xxl) {
-                    
+                    opacity: 100%;
                 }
             }
-
+            
             & .c-hero__surname {
                 @media only screen and (min-width: $bm-xxl) {
-                    
+                    opacity: 100%;
                 }
             }
         }
@@ -93,7 +93,9 @@
             }
             
             @media only screen and (min-width: $bm-xxl) {
-                
+                opacity: 0%;
+                line-height: 160px;
+                transition: opacity 5s;
             }
         }
         
@@ -103,7 +105,10 @@
             }
             
             @media only screen and (min-width: $bm-xxl) {
-                
+                opacity: 0%;
+                line-height: 160px;
+                transition: opacity 5s;
+                transition-delay: 1s;
             }
         }
     }
@@ -126,7 +131,11 @@
         }
 
         @media only screen and (min-width: $bm-xxl) {
-            
+            top: 190px;
+            left: -244px;
+            transition: opacity 5s;
+            transition-delay: 1s;
+            text-align: right;
         }
     }
 
