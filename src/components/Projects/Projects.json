@@ -1,0 +1,10 @@
+[
+    {
+        "imageLinkMobile": "./images/project-example-pic-1--mobile.png",
+        "imageLinkDesktop": "./images/project-example-pic-1--desktop.png",
+        "projectLink": "https://example.haydenhornsby.xyz",
+        "projectGitLink": "https://github.com/haydenHornsbyDev/Portfolio-Template",
+        "projectName": "Portfolio Template",
+        "projectDescript": "An agency portfolio template website coded with HTML, CSS, and JavaScript. Including individual pages for about, services, portfolio, individual projects, a blog, individual blogs, and a contact page. All of this was coded from a given Adobe XD design and creates a showcase of my skills used to code my first full website."
+    }
+]

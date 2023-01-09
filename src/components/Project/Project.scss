@@ -1,0 +1,102 @@
+@import "../../scss/lib.scss";
+
+.c-project {
+    &__container {
+        @include container;
+    }
+
+    &__content{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        
+        @media only screen and (min-width: $bm-lg) {
+            flex-direction: row;
+        }
+    }
+
+    &__example-pic {
+        @include card;
+        position: relative;
+        display: block;
+        overflow: hidden;
+        margin-bottom: 40px;
+        width: fit-content;
+        max-width: 400px;
+        height: 100%;
+        max-height: 400px;
+
+        @media only screen and (min-width: $bm-lg) {
+            margin-bottom: 0;
+        }
+
+        &:hover,
+        &:focus {
+            border-color: $purple-light;
+
+            & > img {
+                opacity: 40%;
+            }
+
+            & > .c-project__img-overlay {
+                display: block;
+            }
+        }
+
+        & > img {
+            margin-bottom: -11px;
+            width: 100%;
+        }
+    }
+
+    &__img-overlay {
+        position: absolute;
+        z-index: 2;
+        display: none;
+        width: 100%;
+        text-align: center;
+        color: $background-gray-text;
+
+        &:hover,
+        &:focus {
+            color: $purple-dark;
+        }
+
+        &--top {
+            top: calc(50% - 80px);
+        }
+
+        &--mid {
+            top: calc(50% - 16px);
+        }
+        
+        &--bot {
+            top: calc(50% + 48px);
+        }
+    }
+
+    &__pic {
+        &--mobile {
+            @media only screen and (min-width: $bm-lg) {
+                display: none;
+            }
+        }
+
+        &--desktop {
+            display: none;
+
+            @media only screen and (min-width: $bm-lg) {
+                display: block;
+            }
+        }
+    }
+
+    &__text {
+        max-width: 400px;
+    }
+
+    &__name {
+        margin-bottom: 20px;
+    }
+}

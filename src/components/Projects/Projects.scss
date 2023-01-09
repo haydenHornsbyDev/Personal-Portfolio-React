@@ -1,0 +1,52 @@
+@import "../../scss/lib.scss";
+
+.c-projects {
+    &__heading {
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    &__item {
+        @media only screen and (min-width: $bm-lg) {
+            padding: 20px 0px;
+        }
+    }
+
+    &__divider {
+        margin: 40px auto 40px auto;
+        border-radius: 1px;
+        width: 100px;
+        height: 2px;
+        background-color: $purple-dark;
+    }
+
+    &__render-error {
+        @include card;
+        margin: 0 auto;
+        padding: 10px 20px;
+        width: fit-content;
+        color: $background-gray-text;
+        text-align: center;
+    }
+
+    &__website-git {
+        @include card;
+        display: block;
+        margin: 0 auto;
+        padding: 10px 20px;
+        width: fit-content;
+        color: $background-gray-text;
+        text-align: center;
+
+        @media only screen and (min-width: $bm-lg) {
+            margin-top: 60px;
+        }
+
+        &:hover,
+        &:focus {
+            border-color: $purple-light;
+            background-color: $background-dark;
+            color: $background-dark-text;
+        }
+    }
+}
