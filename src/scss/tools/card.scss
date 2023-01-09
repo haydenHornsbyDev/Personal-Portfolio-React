@@ -1,0 +1,12 @@
+@import '../settings/colours.scss';
+
+@mixin card {
+    box-shadow: 0px 5px 10px $shadow-purple;
+    border: 1px solid $purple-dark;
+    border-radius: 6px;
+    background-color: $background-gray-light;
+
+    @media only screen and (min-width: $bm-xl) {
+        border-width: 2px;
+    }
+}
