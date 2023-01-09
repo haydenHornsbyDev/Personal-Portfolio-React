@@ -1,0 +1,68 @@
+@import "../../scss/lib.scss";
+
+.c-about {
+    &__container {
+        @include container;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+
+        @media only screen and (min-width: $bm-lg) {
+            flex-direction: row-reverse;
+        }
+    }
+
+    &__heading {
+        margin-bottom: 40px;
+
+        &--mobile {
+            text-align: center;
+            width: fit-content;
+
+            @media only screen and (min-width: $bm-lg) {
+                display: none;
+            }
+        }
+
+        &--desktop {
+            display: none;
+
+            @media only screen and (min-width: $bm-lg) {
+                display: block;
+            }
+        }
+    }
+
+    &__profile-pic {
+        overflow: hidden;
+        margin-bottom: 40px;
+        width: fit-content;
+        max-width: 400px;
+
+        @media only screen and (min-width: $bm-lg) {
+            margin-bottom: 0;
+        }
+
+        & > img {
+            margin-bottom: -4px;
+            width: 100%;
+        }
+    }
+
+    &__text {
+        max-width: 400px;
+    }
+
+    &__para {
+        margin-bottom: 20px;
+        color: $background-light-text;
+
+        &--bot {
+            margin-bottom: 0;
+        }
+    }
+}
