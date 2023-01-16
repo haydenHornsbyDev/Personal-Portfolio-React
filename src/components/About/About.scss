@@ -38,6 +38,7 @@
     }
 
     &__profile-pic {
+        @include card;
         overflow: hidden;
         margin-bottom: 40px;
         width: fit-content;

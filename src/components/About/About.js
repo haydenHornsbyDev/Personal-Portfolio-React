@@ -8,7 +8,7 @@ function about() {
             <div className='c-about__container'>
                 <div className='c-about__content'>
                     <h3 class='c-about__heading--mobile u-enlarge'>About Me</h3>
-                    <div class='c-about__profile-pic c-main__card'>
+                    <div class='c-about__profile-pic'>
                         <img src='./images/profile-pic.jpg' />
                     </div>
                     <div class='c-about__text'>
