@@ -36,7 +36,7 @@ function footer() {
                         <li className='c-footer__page'><a className='c-footer__link c-footer__link--page' href='/'>Home</a></li>
                         <li className='c-footer__page'><a className='c-footer__link c-footer__link--page' href='#about'>About</a></li>
                         <li className='c-footer__page'><a className='c-footer__link c-footer__link--page' href='#projects'>Projects</a></li>
-                        <li className='c-footer__page'><a className='c-footer__link c-footer__link--page' href='#contact'>Contact</a></li>
+                        {/* <li className='c-footer__page'><a className='c-footer__link c-footer__link--page' href='#contact'>Contact</a></li> */}
                     </ul>
                 </footer>
             </div>
