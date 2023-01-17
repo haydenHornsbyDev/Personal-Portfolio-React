@@ -23,20 +23,12 @@ function footer() {
                                 <div className='c-footer__underline'></div>
                             </a>
                         </li>
-                        {/* <li className='c-footer__icon'>
-                            <a className='c-footer__link c-footer__link--icon' href='https://www.instagram.com' target='_blank'
-                                title='Instagram'>
-                                <img id='instagram-icon' src='./images/instagram-icon.png' />
-                                <div className='c-footer__underline'></div>
-                            </a>
-                        </li> */}
                     </ul>
                     <div className='c-footer__divider'></div>
                     <ul className='c-footer__pages'>
                         <li className='c-footer__page'><a className='c-footer__link c-footer__link--page' href='/'>Home</a></li>
                         <li className='c-footer__page'><a className='c-footer__link c-footer__link--page' href='#about'>About</a></li>
                         <li className='c-footer__page'><a className='c-footer__link c-footer__link--page' href='#projects'>Projects</a></li>
-                        {/* <li className='c-footer__page'><a className='c-footer__link c-footer__link--page' href='#contact'>Contact</a></li> */}
                     </ul>
                 </footer>
             </div>

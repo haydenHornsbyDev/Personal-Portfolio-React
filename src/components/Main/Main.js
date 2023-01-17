@@ -12,9 +12,11 @@ function main() {
                 <div class='c-main__anchor-offset' id='about'></div>
                 <About />
             </div>
+            <div className='c-main__border c-main__container'>
+                <div class='c-main__border-line'></div>
+            </div>
             <div className='c-main__projects'>
                 <div class='c-main__anchor-offset' id='projects'></div>
-                <div class='c-main__border--top'></div>
                 <Projects />
             </div>
         </div>

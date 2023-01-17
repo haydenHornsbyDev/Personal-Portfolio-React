@@ -7,12 +7,12 @@ function about() {
         <div className='c-about'>
             <div className='c-about__container'>
                 <div className='c-about__content'>
-                    <h3 class='c-about__heading--mobile u-enlarge'>About Me</h3>
+                    <h3 class='c-about__heading c-about__heading--mobile u-enlarge'>About Me</h3>
                     <div class='c-about__profile-pic'>
-                        <img src='./images/profile-pic.jpg' />
+                        <img src='./images/profile-pic.jpg' alt='Self-portrait'/>
                     </div>
                     <div class='c-about__text'>
-                        <h2 class='c-about__heading--desktop'>About Me</h2>
+                        <h2 class='c-about__heading c-about__heading--desktop'>About Me</h2>
                         <p class='c-about__para'>
                             Hi, I'm Hayden Hornsby, a front-end web developer. I endeavour 
                             to recreate designs as responsive, intuitive, and accessible 

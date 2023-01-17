@@ -1,16 +1,23 @@
 @import "../../scss/lib.scss";
 
 .c-main {
-    padding-top: 80px;
-
     &__wrapper {
         @include wrapper;
     }
 
-    & > div {
+    &__container {
+        @include container;
+    }
+
+    & > div:not(.c-main__border) {
         position: relative;
         z-index: 0;
+        padding-top: 40px;
         padding-bottom: 80px;
+
+        @media only screen and (min-width: $bm-lg) {
+            padding-top: 80px;
+        }
     }
 
     &__anchor-offset {
@@ -18,14 +25,10 @@
         top: -66px;
     }
 
-    &__border {
+    &__border-line {
         border-radius: 1px;
         width: 100%;
         height: 2px;
         background-color: $purple-dark;
-
-        &--top {
-            margin-bottom: 80px;
-        }
     }
 }
